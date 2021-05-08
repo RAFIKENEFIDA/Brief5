@@ -1,0 +1,80 @@
+header {
+    background-image: url("public/image/login.jpg");
+    height: 100vh;
+}
+
+/* .banner-text {
+    padding-top: 40%;
+} */
+.banner-content {
+    padding-top: 30%;
+}
+
+.banner-text h2 {
+    font-size: calc(16px + (45 - 16) * ((100vw - 320px) / (1920 - 320)));
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.banner-text h3 {
+    font-size: calc(14px + (35 - 14) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 800;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+.icons {
+    border-left: 1px solid #e5e5e5;
+    padding: 17px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+.card-hover .card-img-top {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card-hover .card-img-top img {
+    transition: 400ms;
+}
+
+.card-hover:hover .card-img-top img {
+    transform: scale(1.03);
+    transition: 400ms;
+}
+
+.offer {
+    background-image: url("../image/banner.jpg");
+}
+
+.rating {
+    color: #FFCC33;
+}
+
+.discount {
+    background-image: url("../image/banner.jpg");
+}
+
+svg.svg-inline--fa.fa-map-marker-alt.fa-w-12.me-2 {
+    color: red;
+}
+
+.services {
+    background-image: url("../image/banner.jpg");
+}
+
+
+svg {
+    fill: white;
+    width: 40px;
+    height: 40px;
+}
+
+.heart {
+    color: red;
+}
