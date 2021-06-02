@@ -24,21 +24,16 @@ class ControllerLogin
             if ($_POST['email'] === $result['email'] && $_POST['password'] === $result['password_user']) {
 
                 $_SESSION['id'] = $result['id_user'];
+                $_SESSION['id_role'] = $result['id_role'];
+            }
 
-                Session::set('success', '');
+
+            if (isset($_SESSION['id'])) {
                 Redirect::to('Dasboard');
             } else {
-                Session::set('erro', 'mot de passe est incorrect');
+
                 Redirect::to('Login');
             }
         }
-    }
-
-    static public function logout()
-    {
-        session_start();
-        unset($_SESSION['id']);
-
-        Redirect::to('Login');
     }
 }

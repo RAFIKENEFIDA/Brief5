@@ -64,9 +64,7 @@ svg.svg-inline--fa.fa-map-marker-alt.fa-w-12.me-2 {
     color: red;
 }
 
-.services {
-    background-image: url("../image/banner.jpg");
-}
+
 
 
 svg {
@@ -77,4 +75,17 @@ svg {
 
 .heart {
     color: red;
+}
+.deconnexion{
+    margin-top:2rem;
+    margin-bottom:1.5rem;
+    margin-right:1.5rem;
+    float: right;
+    
+}
+@media screen and (max-width: 600px) {
+
+    .non{
+        display:none;
+    }
 }

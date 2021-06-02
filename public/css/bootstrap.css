@@ -7446,7 +7446,7 @@ textarea.form-control-lg {
   background-image: var(--bs-gradient) !important;
 }
 .bg-trp{
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: #0c084c;
 }
 
 .user-select-all {

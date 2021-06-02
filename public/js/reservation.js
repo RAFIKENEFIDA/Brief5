@@ -39,8 +39,8 @@ function enfant(i) {
 
         document.querySelector(".span" + i).innerHTML = `<div class="form-group"> <select name="service${i}" class="form-control selectchmabre"  required>
         <option value="" selected hidden>choiser le service</option>
-        <option value"chambre"  >  chambre simple </option>
-        <option value="supp"> lit supplimentaire</option>
+        <option value"chambre simple"  >  chambre simple </option>
+        <option value="supp adulte"> lit supplimentaire</option>
           </select>  </div>`;
 
     }
@@ -141,7 +141,7 @@ function choisePension() {
     SdemiPension.innerHTML = "";
     if (a == 2) {
 
-        SdemiPension.innerHTML = `<div class="form-group"> <select class="form-control type_demi_pension" name="selected_type_pension_demi"  required>
+        SdemiPension.innerHTML = `<div class="form-group"> <select class="form-control type_demi_pension" name="pensionSelected"  required>
         <option value="" selected hidden>Type du pension demi</option>
         <option  value="dej" >dej/dej</option>
         <option value="diner">dej/diner</option>

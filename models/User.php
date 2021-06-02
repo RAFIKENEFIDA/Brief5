@@ -8,9 +8,6 @@ class User
     static public function login($data)
     {
         $email = $data['email'];
-
-        // $select="SELECT *FROM records";
-        // $req=$this->getConnexion()->prepare($select);
         $strm = DB::connect()->prepare("SELECT *FROM utilisateur WHERE email='$email'");
         $strm->execute() or die('SQL');
 
@@ -31,5 +28,12 @@ class User
         } else {
             return 'error';
         }
+    }
+    static public function FindEmail($email)
+    {
+        $strm = DB::connect()->prepare("SELECT  * FROM utilisateur WHERE email='$email'");
+        $strm->execute() or die('SQL');
+        $x = $strm->fetch();
+        return $x;
     }
 }

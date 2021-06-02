@@ -3,7 +3,6 @@
 require_once "views/view.php";
 
 
-
 class Router
 {
     private $view;
@@ -46,7 +45,7 @@ class Router
                                 $obj->$action();
                             }
                         } else {
-
+                            http_response_code(404);
                             echo "this method doesn't exist";
                         }
                     } else {
@@ -54,7 +53,7 @@ class Router
                         $obj->$action();
                     }
                 } else {
-                    require_once "Controller/ControllerAcceuil.php";
+                    require_once "Controllers/ControllerAcceuil.php";
                 }
             }
         } catch (\Exception $e) {

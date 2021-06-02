@@ -3,7 +3,7 @@ body {
 }
 
 .section {
-    position: relative;
+    
     height: 100vh;
 }
 
@@ -11,6 +11,7 @@ body {
     width: 40px;
     height: 30px;
 }
+
 
 .section-center {
     position: absolute;
@@ -47,6 +48,10 @@ body {
     top: 0;
     background: rgba(0, 0, 0, 0.7);
     z-index: -1
+}
+.reservation{
+    
+    background-color:#126e82;
 }
 
 .booking-form .form-header {

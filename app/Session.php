@@ -2,8 +2,8 @@
 
 class Session
 {
-    static public function set($type, $message)
+    static public function set($nom, $message)
     {
-        setcookie($type, $message, time() + 5, "/");
+        setcookie($nom, $message, time() + 5, "/");
     }
 }
