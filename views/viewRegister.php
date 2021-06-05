@@ -17,13 +17,14 @@
     <!-- css -->
     <link rel="stylesheet" href="public/css/style.css">
     <style>
-    body {
-        background-color: #126e82;
-        ;
-    }
-
     .navbar {
         background-color: #0c084c;
+    }
+
+    h5,
+    h2,
+    h3 {
+        color: #000000;
     }
     </style>
 </head>
@@ -51,20 +52,20 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                    <?php 
-                    if(!isset($_SESSION['id'])){
-                    ?>
+                        <?php
+                        if (!isset($_SESSION['id'])) {
+                        ?>
                         <a class="nav-link2" aria-current="page" href="acceuil">Home</a>
                         <a class="nav-link2" href="login">Login</a>
                         <a class="nav-link2 float-right" href="register">Register</a>
-                        <?php } else{?>
-                        
-                         
-                         <a class="nav-link2" aria-current="page" href="acceuil">Home</a>
+                        <?php } else { ?>
+
+
+                        <a class="nav-link2" aria-current="page" href="acceuil">Home</a>
                         <a class="nav-link2" href="page_reservation">Reserver</a>
                         <a class="nav-link2" href="dasboard">Mon reservation</a>
-                     
-                    <?php } ?>
+
+                        <?php } ?>
 
                     </div>
 
@@ -77,21 +78,26 @@
         <div>
             <div class="container">
                 <div class="row pt-5">
-                    <form class="col-lg-6" action="" method="post">
+                    <form class="col-lg-6 form" action="" method="post">
                         <h2>GREAT JOURNEY BEGINS</h2>
                         <h3 class="typed fw-bold fs-1"></h3>
                         <!-- Full Name -->
-                        <div class="box d-flex ">
+                        <div class="box d-flex form-group ">
                             <!-- Last Name -->
-                            <div class="col input-group-lg me-3 mb-3">
-                                <h5 class="fw-bolder">First Name</h5>
-                                <input class="form-control" type="text" placeholder="Enter your first name"
-                                    id="example-date-input" name="first_Name" required>
+                            <div class="col me-3 mb-3">
+
+                                <label for="exampleInputEmail1">First Name</label>
+                                <input aria-describedby="emailHelp" class="  form-control " type="text"
+                                    placeholder="Enter your first name" id="example-date-input" name="first_Name"
+                                    required>
                             </div>
+
+
                             <!-- Last Name -->
-                            <div class="col input-group-lg mb-3">
-                                <h5 class="fw-bolder">Last Name</h5>
-                                <input class="form-control" type="text" placeholder="Enter your last name"
+                            <div class="col  mb-3">
+
+                                <label for="exampleInputEmail1">Last Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your last name"
                                     id="example-date-input" name="last_Name" required>
                             </div>
                         </div>
@@ -100,9 +106,10 @@
                         <!-- Email and tele number -->
                         <div class="box ">
                             <!-- date -->
-                            <div class="col input-group-lg  mb-3">
-                                <h5 class="fw-bolder">Email</h5>
-                                <input class="form-control" type="text" placeholder="Enter your email"
+                            <div class="col me-3  mb-3">
+
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="text" class="form-control" placeholder="Enter your email"
                                     id="example-date-input" name="email" required>
                             </div>
                             <!-- Last Name -->
@@ -111,15 +118,19 @@
                         <!-- Password -->
                         <div class="box d-flex ">
                             <!-- Last Name -->
-                            <div class="col input-group-lg me-3 mb-3">
-                                <h5 class="fw-bolder">Password</h5>
-                                <input class="form-control" type="password" placeholder="**************"
+                            <div class="col  me-3 mb-3">
+
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" placeholder="**************"
                                     id="example-date-input" name="password" required>
                             </div>
+                            <!-- test -->
+
                             <!-- Last Name -->
-                            <div class="col input-group-lg mb-3">
-                                <h5 class="fw-bolder">repeat Password</h5>
-                                <input class="form-control" type="password" name="repeat_password"
+                            <div class="col mb-3">
+
+                                <label for="exampleInputPassword1">Repeat Password</label>
+                                <input type="password" class="form-control" name="repeat_password"
                                     placeholder="**************" id="example-date-input" required>
                             </div>
                         </div>

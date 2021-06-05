@@ -14,10 +14,8 @@
     <!-- css -->
     <link rel="stylesheet" href="public/css/style.css">
 
-
-
     <title>Document</title>
-    
+
 </head>
 
 <body>
@@ -48,20 +46,20 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                    <?php 
-                    if(!isset($_SESSION['id'])){
-                    ?>
+                        <?php
+                        if (!isset($_SESSION['id'])) {
+                        ?>
                         <a class="nav-link2" aria-current="page" href="acceuil">Home</a>
                         <a class="nav-link2" href="login">Login</a>
                         <a class="nav-link2 float-right" href="register">Register</a>
-                        <?php } else{?>
-                        
-                         
-                         <a class="nav-link2" aria-current="page" href="acceuil">Home</a>
+                        <?php } else { ?>
+
+
+                        <a class="nav-link2" aria-current="page" href="acceuil">Home</a>
                         <a class="nav-link2" href="page_reservation">Reserver</a>
                         <a class="nav-link2" href="dasboard">Mon reservation</a>
-                     
-                    <?php } ?>
+
+                        <?php } ?>
 
                     </div>
 
@@ -98,7 +96,7 @@
 
                                 <div class="row  ">
 
-                                 
+
                                     <div class="col-md-4">
 
                                         <div class="row ">
@@ -167,17 +165,17 @@
 
 
 
-                     
 
-                                        <div class="row d-flex flex-column align-items-center">
 
-                                        <button type="submit" name="ajouter" style="background-color:#126e82;" class="btn col-5  btn-lg  mb-3">
-                                            Ajouter Autre Reservation
-                                        </button>
+                                <div class="row d-flex flex-column align-items-center">
 
-                                        <button type="submit" name="submit" style="background-color:#126e82;" class="btn col-5  btn-lg">
-                                            Book Now
-                                        </button>
+                                    <button type="submit" name="ajouter" class="btn col-4 btn-primary  btn-lg  mb-3">
+                                        Ajouter Autre Reservation
+                                    </button>
+
+                                    <button type="submit" name="submit" class="btn col-4 btn-primary btn-lg">
+                                        Book Now
+                                    </button>
 
                                 </div>
                             </form>

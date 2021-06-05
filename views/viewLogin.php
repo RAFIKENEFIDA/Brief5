@@ -18,13 +18,14 @@
     <!-- css -->
     <link rel="stylesheet" href="public/css/style.css">
     <style>
-    body {
-        background-color: #126e82;
-
-    }
-
     .navbar {
         background-color: #0c084c;
+    }
+
+    h5,
+    h2,
+    h3 {
+        color: #000000;
     }
     </style>
 </head>
@@ -53,20 +54,20 @@ if (isset($_POST['submit'])) {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                    <?php 
-                    if(!isset($_SESSION['id'])){
-                    ?>
+                        <?php
+                        if (!isset($_SESSION['id'])) {
+                        ?>
                         <a class="nav-link2" aria-current="page" href="acceuil">Home</a>
                         <a class="nav-link2" href="login">Login</a>
                         <a class="nav-link2 float-right" href="register">Register</a>
-                        <?php } else{?>
-                        
-                         
-                         <a class="nav-link2" aria-current="page" href="acceuil">Home</a>
+                        <?php } else { ?>
+
+
+                        <a class="nav-link2" aria-current="page" href="acceuil">Home</a>
                         <a class="nav-link2" href="page_reservation">Reserver</a>
                         <a class="nav-link2" href="dasboard">Mon reservation</a>
-                     
-                    <?php } ?>
+
+                        <?php } ?>
 
                     </div>
 
@@ -85,14 +86,14 @@ if (isset($_POST['submit'])) {
                     <!--login mail and password -->
                     <div class="box ">
                         <!-- Email -->
-                        <div class="col-md-8 input-group-lg  mb-3">
-                            <h5 class="fw-bolder">Email</h5>
+                        <div class="col-md-8  mb-3">
+                            <label for="exampleInputEmail1">Email</label>
                             <input class="form-control rounded" name="email" type="text" placeholder="Enter your email"
                                 id="example-date-input">
                         </div>
                         <!-- password -->
-                        <div class="col-md-8 input-group-lg mb-3">
-                            <h5 class="fw-bolder">Password</h5>
+                        <div class="col-md-8  mb-3">
+                            <label for="exampleInputPassword1">Password</label>
                             <input class="form-control rounded" name="password" type="password"
                                 placeholder="**************" id="example-date-input">
                         </div>
